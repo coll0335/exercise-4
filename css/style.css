@@ -1229,9 +1229,10 @@ ul, li, h2 {
   .item-top ul h2 {
     transition: all 300ms linear;
     color: #ffffff;
-    padding: 0.5em; }
+    padding: 0.5em;
+    display: block; }
 
-/* line 58, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+/* line 59, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
 .item-bottom ul {
   bottom: 0;
   position: fixed;
@@ -1240,23 +1241,68 @@ ul, li, h2 {
   width: 100%;
   font-size: 0;
   text-align: center; }
-  /* line 66, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+  /* line 67, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
   .item-bottom ul li {
     display: inline-block;
     background: #2A2F36;
     width: 50%;
     font-size: 1.5em; }
-    /* line 71, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+    /* line 72, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
     .item-bottom ul li:hover {
       cursor: pointer; }
-      /* line 73, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+      /* line 74, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
       .item-bottom ul li:hover:nth-child(1) h2 {
         background: #D96459; }
-      /* line 76, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+      /* line 77, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
       .item-bottom ul li:hover:nth-child(2) h2 {
         background: #31797D; }
-  /* line 81, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+  /* line 82, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
   .item-bottom ul h2 {
     transition: all 300ms linear;
     color: #ffffff;
     padding: 0.5em; }
+
+/* line 93, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+.content {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0; }
+  /* line 97, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+  .content-wrapper {
+    width: 100%;
+    padding: 13.5em 15em;
+    position: fixed;
+    height: 100%;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    transition: all 300ms linear; }
+    /* line 104, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+    .content-wrapper:nth-child(1) {
+      background: #61C791; }
+    /* line 107, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+    .content-wrapper:nth-child(2) {
+      background: #F23C55; }
+    /* line 110, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+    .content-wrapper:nth-child(3) {
+      background: #D96459; }
+    /* line 113, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+    .content-wrapper:nth-child(4) {
+      background: #31797D; }
+  /* line 117, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+  .content h2 {
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 1px; }
+  /* line 122, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+  .content p {
+    color: #ffffff;
+    line-height: 1.5em; }
+
+/* line 129, /Users/Mark/Documents/Mark/Year 3:3/Semester 2/Web Development/exercises/exercise-4/scss/components/main */
+.open {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  z-index: 1000; }
