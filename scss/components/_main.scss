@@ -1,13 +1,66 @@
-body {
+ul, li, h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.body-content {
 	display: block;
+	width:100%;
+	height: 100vh;
 	color: $white;
 	background: $orange;
-	padding: 9em 15em;
+	padding: 13.5em 15em;
+	overflow:hidden;
 	h1 {
 		text-transform: uppercase;
 		font-weight: 600;
 	}
 	p {
 		line-height: 1.5em;
+	}
+}
+
+
+.item-top ul {
+	top: 0;
+	position: fixed;
+	width:100%;
+	font-size:0;
+	text-align: center;
+	li {
+		display: inline-block;
+		margin: 0 auto;
+		width: 50%;
+		font-size: 1.5em;
+		background: $grey;
+	}
+	&:hover {
+		&:nth-child(1) {
+			background: $red;
+		}
+	}
+	h2 {
+		color: $white;
+		padding: .5em;
+	}
+}
+
+.item-bottom ul {
+	bottom: 0;
+	position: fixed;
+	display:block;
+	float:right;
+	width:100%;
+	font-size:0;
+	text-align:center;
+	li {
+		display:inline-block;
+		background: $grey;
+		width:50%;
+		font-size:1.5em;
+	}
+	h2 {
+		color: $white;
+		padding: .5em;
 	}
 }
