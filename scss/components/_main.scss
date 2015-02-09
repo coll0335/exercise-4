@@ -1,0 +1,13 @@
+body {
+	display: block;
+	color: $white;
+	background: $orange;
+	padding: 9em 15em;
+	h1 {
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+	p {
+		line-height: 1.5em;
+	}
+}
